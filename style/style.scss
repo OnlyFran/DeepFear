@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    background-color: #000000;
+    background-image: url(../images/roses.png);
 }
 
 /* index comienzo */
@@ -71,7 +71,7 @@ body {
 /* footer inicio */
 .misRedes {
     font-size: 0px;
-    color: #746e6e59;
+    color: #6d0b0b;
     text-align: center;
   }
   
@@ -80,12 +80,13 @@ body {
   }
   
   .misRedes a:hover {
-    color: #6d0b0b;
+    color: #220202;
     transition: 1.6s;
   }
 
   .copy {
       text-align: center;
       display: block;
+      color: #6d0b0b;
   }
   /* footer fin */

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Estonia&family=Shadows+Into+Light&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 /* historias comienzo */
@@ -84,10 +83,6 @@ h3 {
   background-color: #8d0d0d;
 }
 
-.fondo {
-  background-image: url(../images/niños.jpg);
-}
-
 .register {
   width: 400px;
   background-color: #300000;
@@ -137,12 +132,6 @@ h3 {
   transition: 1s;
 }
 
-.footerlog {
-  background-color: black;
-  margin-top: 59px;
-  height: 100px;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -155,7 +144,7 @@ html {
 }
 
 body {
-  background-color: #000000;
+  background-image: url(../images/roses.png);
 }
 
 /* index comienzo */
@@ -211,7 +200,7 @@ body {
 /* footer inicio */
 .misRedes {
   font-size: 0px;
-  color: #746e6e59;
+  color: #6d0b0b;
   text-align: center;
 }
 
@@ -220,7 +209,7 @@ body {
 }
 
 .misRedes a:hover {
-  color: #6d0b0b;
+  color: #220202;
   -webkit-transition: 1.6s;
   transition: 1.6s;
 }
@@ -228,6 +217,7 @@ body {
 .copy {
   text-align: center;
   display: block;
+  color: #6d0b0b;
 }
 
 /* footer fin */
