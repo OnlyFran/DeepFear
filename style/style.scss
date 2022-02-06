@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Estonia&family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import "historias";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000000;
+}
+
+/* index comienzo */
+.listaDeObjetos {
+    margin: 2rem 0;
+  }
+  
+  .obj {
+    color: #ffffff;
+    font-family: "Shadows Into Light", cursive;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  
+  .imgOuija {
+    width: 400px;
+    display: block;
+    padding: 5px;
+    border: 2px solid #220202;
+    margin: auto;
+  }
+  
+  .imgVoodoo {
+    width: 400px;
+    display: block;
+    padding: 5px;
+    border: 2px solid #220202;
+    margin: auto;
+  }
+  
+  .imgTarot {
+    width: 400px;
+    display: block;
+    padding: 5px;
+    border: 2px solid #220202;
+    margin: auto;
+  }
+  
+  .def {
+    color: #ffffff;
+  }
+  
+  .def a {
+    text-decoration: underline;
+    color: #ffffff;
+  }
+  
+  .def a:hover {
+    color: #6d0b0b;
+  }
+/* index fin */
+
+/* footer inicio */
+.misRedes {
+    font-size: 0px;
+    color: #746e6e59;
+    text-align: center;
+  }
+  
+  .logos {
+    width: 50px;
+  }
+  
+  .misRedes a:hover {
+    color: #6d0b0b;
+    transition: 1.6s;
+  }
+  
+  /* footer fin */
