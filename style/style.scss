@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Estonia&family=Shadows+Into+Light&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 @import "historias";
+@import "cine";
+@import "comunidad";
+@import "login";
 * {
     margin: 0;
     padding: 0;
@@ -80,5 +83,9 @@ body {
     color: #6d0b0b;
     transition: 1.6s;
   }
-  
+
+  .copy {
+      text-align: center;
+      display: block;
+  }
   /* footer fin */

@@ -1,0 +1,57 @@
+// login inicio
+.fondo {
+    background-image: url(../images/niños.jpg);
+}
+
+.register {
+    width: 400px;
+    background-color: #300000;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    color: white;
+}
+
+.form-control {
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid red;
+    font-size: 18px;
+}
+
+.button-register {
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    color: white;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+
+.button-register:hover {
+    color: black;
+}
+
+.tyc {
+    text-align: center;
+}
+
+.tyc a {
+    color: white;
+}
+.tyc a:hover {
+    color: #6d0b0b;
+    transition: 1s;
+}
+
+.footerlog {
+    background-color: black;
+    margin-top: 59px;
+    height: 100px;
+}
+// login fin
