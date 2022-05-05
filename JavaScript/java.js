@@ -29,3 +29,47 @@ if(donation == "si"){
 }else if(donation == "" || donation != "si" || donation != "no"){
     alert("Tomese un tiempo para pensarlo, mientras tanto.. ¡disfrute de nuestro sitio web!");
 }
+
+class Game{
+    constructor(gameName, gamePrice){
+        this.gameName = gameName;
+        this.gamePrice = parseFloat(gamePrice);
+        this.sold = false;
+    }
+
+    iva(){
+        console.log(this.gamePrice + (this.gamePrice * 0.21));
+    }
+
+    sell(){
+        this.sold = true;
+        console.log(this.sold);
+    }
+}
+
+const games = [];
+
+let buy = parseInt(prompt("Bienvenido a la biblioteca, seleccione el juego que desea adquirir:\n 1  Phasmophobia\n 2  Deceit\n 3  Visage\n 4  Five Nights at Freddy´s Complete\n 5  Resident Evil 9"));
+
+if(buy == "1"){
+    games.push(new Game("phasmophobia", 400));
+    alert(`Juego: Phasmophobia\nPrecio Base: ${400}\nMonto final con IVA: ${400 + (400 * 0.21)}`);
+}else if(buy == "2"){
+    games.push(new Game("deceit", 0));
+    alert(`Juego: Deceit\nPrecio: Free to Play!`);
+}else if(buy == "3"){
+    games.push(new Game("visage", 630));
+    alert(`Juego: Visage\nPrecio Base: ${630}\nMonto final con IVA: ${630 + (630 * 0.21)}`);
+}else if(buy == "4"){
+    games.push(new Game("fnaf completo", 999));
+    alert(`Juego: Five Nights at Freddy´s Complete Edition\nPrecio Base: ${999}\nMonto final con IVA: ${999 + (999 * 0.21)}`);
+}else if(buy == "5"){
+    games.push(new Game("resident evil 9", 1250));
+    alert(`Juego: Resident Evil 9\nPrecio Base: ${1250}\nMonto final con IVA: ${1250 + (1250 * 0.21)}`);
+}else{
+    alert("Error, ingrese un juego existente.")
+    buy = parseInt(prompt("Bienvenido a la biblioteca, seleccione el juego que desea adquirir:\n 1  Phasmophobia\n 2  Deceit\n 3  Visage\n 4  Five Nights at Freddy´s Complete\n 5  Resident Evil 9"));
+}
+
+alert(`¡Gracias por tu compra, que lo disfrutes!`)
+console.log(games); // juegos adquiridos
