@@ -1,4 +1,4 @@
-let username = prompt("Ingrese su nombre de usuario:");
+/* let username = prompt("Ingrese su nombre de usuario:");
 let password = prompt("Ingrese la clave secreta:");
 
 while(password != 666){
@@ -73,3 +73,22 @@ if(buy == "1"){
 
 alert(`¡Gracias por tu compra, que lo disfrutes!`)
 console.log(games); // juegos adquiridos
+ */
+
+// DOM entrega
+
+let inglesOuija = document.getElementById("inglesOuija")
+let inglesVoodoo = document.getElementById("inglesVoodoo")
+let inglesTarot = document.getElementById("inglesTarot")
+let idioma = prompt("¿Desea leer los objetos en Ingles? si/no");
+
+if(idioma === "si"){
+    alert("Idioma de objetos: Ingles");
+    inglesOuija.innerHTML = "<p>Ouija Board</p>"
+    inglesVoodoo.innerHTML = "<p>Voodoo Doll</p>"
+    inglesTarot.innerHTML = "<p>Tarot Cards</p>"
+}else if(idioma === "no"){
+    alert("Idioma de objetos: Español");
+}else{
+    alert("Error, iniciando idioma predeterminado");
+}
