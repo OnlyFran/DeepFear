@@ -92,3 +92,23 @@ if(idioma === "si"){
 }else{
     alert("Error, iniciando idioma predeterminado");
 }
+
+let english = document.getElementById("english");
+let espanol = document.getElementById("espanol");
+
+function cambioIngles(){
+    inglesOuija.innerHTML = "<p>Ouija Board</p>"
+    inglesVoodoo.innerHTML = "<p>Voodoo Doll</p>"
+    inglesTarot.innerHTML = "<p>Tarot Cards</p>"
+    alert("Cambiaste el Idioma a Inglés")
+}
+
+function cambioEspanol(){
+    inglesOuija.innerHTML = "<p>Tablero Ouija</p>"
+    inglesVoodoo.innerHTML = "<p>Muñeco Voodoo</p>"
+    inglesTarot.innerHTML = "<p>Cartas del Tarot</p>"
+    alert("Cambiaste el Idioma a Español")
+}
+
+english.addEventListener("click", cambioIngles);
+espanol.addEventListener("click", cambioEspanol);
