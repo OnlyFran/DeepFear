@@ -9,6 +9,7 @@ function cambioIngles(){
     voodooDescription.innerHTML = "<p>The term Voodoo doll commonly describes an effigy into which pins are inserted. Such practices are found in various forms in the magical traditions of many cultures around the world.</p>";
     tarotDescription.innerHTML = "<p>The tarot is a pack of playing cards, used from at least the mid-15th century in various parts of Europe to play games such as Italian tarocchini, many of which are still played today. In the late 18th century, some tarot decks began to be used for divination via tarot card reading and cartomancy leading to custom decks developed for such occult purposes.</p>";
     console.log("Current language: English");
+    sessionStorage.setItem("Lenguaje actual", "ingles");
 }
 
 function cambioEspanol(){
@@ -19,6 +20,7 @@ function cambioEspanol(){
     voodooDescription.innerHTML = "<p>El muñeco Voodoo o Vudú es una efigie la cual, a través de magia, esta conectada al alma de un ser, y su uso podría llegar a resultar extremadamente peligroso y dañino.</p>"
     tarotDescription.innerHTML = `<p>El Tarot es una baraja de naipes que, además de servir para jugar, se usa a menudo como medio de "adivinación" del pasado, de la situación presente del consultante y, algunas veces, del futuro, por lo que constituiría un tipo de cartomancia. También existe un método de lectura terapéutica, donde la lectura no reside en la adivinanza o dar certezas sino en utilizar los arcanos como simbolismos para analizar la situación. Carl Gustav Jung estudió el mazo y lo utilizó como medio de análisis y trabajo con pacientes.</p>`
     console.log("Idioma actual: Español");
+    sessionStorage.setItem("Lenguaje actual", "español");
 }
 
 english.addEventListener("click", cambioIngles);
