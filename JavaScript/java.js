@@ -1,3 +1,10 @@
+Swal.fire({
+    title: '¡Atención +18!',
+    text: 'Recomendamos que los menores de edad no vean el contenido de nuestro sitio, y de hacerlo, que sea bajo la supervición de un adulto, Deep Fear no se hace respondable de lo que llegase a pasar ignorada esta advertencia.',
+    icon: 'warning',
+    confirmButtonText: 'Tengo +18 años'
+  })
+
 let english = document.getElementById("english");
 let espanol = document.getElementById("espanol");
 
@@ -25,3 +32,12 @@ function cambioEspanol(){
 
 english.addEventListener("click", cambioIngles);
 espanol.addEventListener("click", cambioEspanol);
+
+let juegoSeleccionado = document.getElementById("inputJuegos");
+juegoSeleccionado.addEventListener("ENTER", console.log("Hola"));
+
+function carritoInicio(){
+    let carroJuegos = [];
+
+    localStorage.setItem("Juego", JSON.stringify(juegoSeleccionado));
+}

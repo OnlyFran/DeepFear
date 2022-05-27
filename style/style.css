@@ -148,6 +148,10 @@ body {
 }
 
 /* index comienzo */
+#seleccionJuegos{
+  color: white;
+}
+
 .listaDeObjetos {
   margin: 2rem 0;
 }
