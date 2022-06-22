@@ -5,6 +5,14 @@
   margin-top: 2rem;
 }
 
+.by {
+  text-align: center;
+  margin: auto;
+  padding: 5px;
+  color: #8d0c0c;
+  text-decoration: underline;
+}
+
 .story {
   margin: auto;
   text-align: center;
@@ -38,6 +46,39 @@ h3 {
   margin-top: 1%;
   color: #8d0c0c;
   text-decoration: underline;
+}
+
+.entradaHistorias {
+  background-color: #220202;
+  border: #000;
+  margin: auto;
+  height: 40px;
+  width: 500px;
+  text-align: left;
+  color: #fff;
+}
+
+#entradaTitulos {
+  text-align: center;
+}
+
+#entradaUsuarios {
+  text-align: center;
+}
+
+#historiasCompartidas {
+  color: #fff;
+}
+
+#nuevasHistorias {
+  text-align: center;
+  height: 255px;
+  padding: 15px;
+}
+
+#compartir {
+  background-color: #220202;
+  color: #fff;
 }
 
 /* historias fin */
@@ -148,6 +189,32 @@ body {
 }
 
 /* index comienzo */
+.botonesIdioma{
+  position: relative;
+  text-align: center;
+  padding: 3px;
+  display: inline-block;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-decoration: none;
+  overflow: hidden;
+  background-color: transparent;
+  border: 0;
+}.botonesIdioma:hover{
+  background-position: center;
+  color: transparent;
+  transition: 0.12s;
+}
+
+#english:hover{
+  background-image: url(../images/britain.png);
+}
+
+#espanol:hover{
+  background-image: url(../images/españa.png);
+  background-size: cover;
+}
+
 #seleccionJuegos{
   color: white;
 }

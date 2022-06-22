@@ -27,7 +27,7 @@
                   <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="./pages/historias.html">Historias</a>
+                  <a class="nav-link" href="historias.html">Historias</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="cine.html">Cine</a>
@@ -56,37 +56,19 @@
 <!-- barra de navegación fin -->
 
 <!-- historias inicio -->
+        <div id="historias">
+        </div>
+        <div id="historiasCompartidas">
 
-    <section class="container-fluid row primerContainer">
-        <div class="story historia1 col-lg-5 col-md-12 col-xs-12">
-            <h3>"Hay algo detrás"</h3>
-            <img class="img img-fluid" src="../images/silueta.jpg" alt="HayAlgoDetrás">
-            <p class="txt text-center">Y él seguía corriendo, sin frenar, ni para mirar detrás suyo, despavorido del horror del saber que lo que había visto aún seguía allí, lo podía oír mover sus tétricas extremidades sobre el camino de roca, él era totalmente conciente de que estaba detrás, como si el viento le susurrara y le dijera que si se voltea tan solo un segundo, moriría de la manera mas atróz que un simple humano pudiese imaginar. Frenaron los pasos detrás de él, y volteó a mirar, ya no había nada allí. Frenó en seco, exhausto mirando entre los árboles del bosque, ¿Fué una ilusión? Pensó. Y el viento susurró una última vez..
-            <p id="judas">By: TheJudas</p>
         </div>
-        <div class="story historia2 col-lg-5 col-md-12 col-xs-12">
-            <h3>"¿Has visto a los niños?"</h3>
-            <img class="img img-fluid" src="../images/children.jpg" alt="los niños">
-            <p class="txt text-center">Los niños juegan en el parque y la madre los ve sonriente, por otro lado, no podía faltar el amargo rostro del padre de las criaturas, como si su día a día fuese un martirio. La madre se toma unos minutos para ir a darse una ducha antes de salir de compras, el vapor de la ducha empaña el espejo de baño, al salir, escucha risitas por los pasillos. Llega a la cocina y rompe el silencio: "amor, ¿has visto a los niños?" preguntandole a su marido, el cual la ignora completamente, aún lo atormentan aquellas voces, aquellas risas, pasaron años que los niños murieron en el bus escolar, lo que sea que ronda aquella casa, jamás tuvieron vida propia.
-            <p id="strongheart">By: StrongHeart</p>
-        </div>
-        <div class="story historia3 col-lg-4 col-md-6 col-xs-12">
-            <h3 class="text-center">"¿Cuál es su Emergencia?"</h3>
-            <img class="img img-fluid" src="../images/emergency.jfif" alt="los niños">
-            <p class="txt text-center">Todo ocurrio una desoladora noche de invierno, no bastaba abrigo para protegerse de tal helada. La operadora había tenido una jornada muy tranquila, nada fuera de lo habitual, asaltos, gritos, quejas por música muy alta, hasta que a las 3:06 AM entró un llamado, "911, ¿Cuál es su emergencia?" inicia con el procedimiento correspondiente, del otro lado, la sorprendió una dulce voz de una niña. "¿Pueden venir a mi casa?", pregunta inocentemente, "Un señor entró y pegarle a mami y tengo mucho miedo", la operadora la tranquiliza a la pequeña, consigue la dirección y envía una unidad. Pocas horas pasaron hasta que explotaron las noticias y llegaron los medios al hecho, "se encuentran 2 cuerpos en estado de putrefacción en el sotano de una casa en el centro, forense afirma que se trata de una mujer de unos 30 años y su presunta hija de unos 8 años, las cuales llevam más de 20 días allí, mostrando signos de violencia física y de haber sido abusadas"
-            <p id="strongheart">By: SweetLyrics</p>
-        </div>
-        <div class="story historia4 col-lg-4 col-md-6 col-xs-12">
-            <h3 class="text-center">"No me dejes Caer"</h3>
-            <img class="img img-fluid" src="../images/caer.jfif" alt="No me dejes Caer">
-            <p class="txt text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repellendus quod enim nulla beatae perspiciatis dolorem modi sit, necessitatibus blanditiis praesentium minima suscipit eligendi, fugit incidunt debitis, ullam aut aliquam eius? Minus quod dolor, nostrum voluptatum aliquid nisi, aspernatur eaque, eos repellendus incidunt quo porro. Hic corporis voluptates enim iure distinctio, mollitia.
-            <p id="strongheart">By: MyM8</p>
-        </div>
-        <div class="story historia5 col-lg-4 col-md-6 col-xs-12">
-            <h3 class="text-center">"Debajo la Cama"</h3>
-            <img class="img img-fluid" src="../images/bed.jfif" alt="los niños">
-            <p class="txt text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repellendus quod enim nulla beatae perspiciatis dolorem modi sit, necessitatibus blanditiis praesentium minima suscipit eligendi, fugit incidunt debitis, ullam aut aliquam eius? Minus quod dolor, nostrum voluptatum aliquid nisi, aspernatur eaque, eos repellendus incidunt quo porro. Hic corporis voluptates enim iure distinctio, mollitia.
-            <p id="strongheart">By: Keller8</p>
+        <div id="nuevasHistorias">
+          <input placeholder="Título de tu historia" id="entradaTitulos" class="entradaHistorias" type="text">
+          <br><br>
+          <input placeholder="Ingresa tu historia" id="entradaHistorias" class="entradaHistorias" type="text">
+          <br><br>
+          <input placeholder="Autor o Usuario" id="entradaUsuarios" class="entradaHistorias" type="text">
+          <br><br>
+          <button id="compartir">Compartir</button>
         </div>
     </section>
 
@@ -108,6 +90,7 @@
 
 <!-- scripts inicio -->
 
+    <script src="../JavaScript/story.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
