@@ -1,14 +1,17 @@
 function cargar(e){
-    let entradaTittle = document.getElementById("entradaHistorias").value;
+    let entradaTittle = document.getElementById("entradaTitulos").value;
     let entradaText = document.getElementById("entradaHistorias").value;
-    let entradaUser = document.getElementById("entradaHistorias").value;
+    let entradaUser = document.getElementById("entradaUsuarios").value;
     entradaTittle = localStorage.setItem("Nueva Titulo", entradaTittle);
     entradaText = localStorage.setItem("Nueva Historia", entradaText);
     entradaUser = localStorage.setItem("Nueva Usuario", entradaUser);
-    historiasCompartidas.innerHTML = `
-    "${entradaTitulos.value}"<br>
-    ${entradaHistorias.value}<br>
-    ${entradaUsuarios.value}<br>`
+    arrHistorias.push(entradaTittle, entradaText, entradaUser);
+    historiasCompartidas.innerHTML = (`
+    <h3 class="text-center">"${entradaTitulos.value}"</h3>
+    <br>
+    <p class="txt text-center">${entradaHistorias.value}</p>
+    <br>
+    <p class="by">${entradaUsuarios.value}</p>`);
 }
 
 const historias = document.getElementById("historias");
